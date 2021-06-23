@@ -25,13 +25,13 @@ class ShortNotificationPrinter(AbstractObserver):
     def __init__(self):
         self.achievements = set()
 
-    def update(self, achievment):
+    def update(self, achivement):
         self.achievements.add(achivement)
 
 
 class FullNotificationPrinter(AbstractObserver):
     def __init__(self):
-        self.achievments = []
+        self.achievements = []
 
-    def update(self, achievment):
+    def update(self, achivement):
         self.achievements.append(achivement)
